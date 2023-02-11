@@ -1,0 +1,20 @@
+Syntax : pair<datatype/container,datatype/container> pair_name;
+for example : pair<int,string> p;
+
+Putting values : 
+(1) - pairName = make_pair(value1, value2) // inbuilt function
+for example : p = make_pair(1, "abc");
+(2) - using curly braces : {value1, value2};
+for eg. p = {2, "abc"};
+(3) - input by user : cin>>p.first; cin>>p.second;
+
+Accessing value : 
+for first value - pairName.first;
+for second value - pairName.second;
+for eg. p.first; //2
+        p.second; //abc
+
+Copy :
+pair<int,string> p1 = p; // this copies as pass by value type i.e. changing p1.first does not affect p.first.
+pair<int,string> &p1 = p; // this copies as pass by reference type i.e. changing p1.first does affect p.first.
+
