@@ -48,7 +48,7 @@ int main()
 	//Given n numbers in input you have to print even numbers in 1 line in sorted order and similarly odd numbers in the next line in the sorted order in the next line.
 
 	//solution
-	//basic apporach -> take two vectors. in one store even numbers and then sort and in oanother store odd numbers and then sort it. we cannot array since we do not know what is the number of odd and even numbers so we cannot predefine the size of the array.
+	//basic apporach -> take two vectors. in one store even numbers and then sort and in another store odd numbers and then sort it. we cannot use array since we do not know what is the number of odd and even numbers so we cannot predefine the size of the array. if we want to use array we have to first find the number of odd and even numbers which would be more tough than this approach.
 
 	vector<int> even;
 	vector<int> odd;
@@ -71,7 +71,7 @@ int main()
 		}
 	}
 
-	sort(even.begin(), even.end());
+	sort(even.begin(), even.end()); // c++ stl function for sorting wolud be explained in next file.
 	sort(odd.begin(), odd.end());
 
 	for (int i = 0; i < even.size(); i++)
